@@ -1,0 +1,41 @@
+public class Student 
+{
+	private int rollNumber;
+    private String name;
+    private int marksObtained;
+
+    public int getRollNumber() 
+    {
+        return rollNumber;
+    }
+
+    public void setRollNumber(int rollNumber) 
+    {
+        this.rollNumber = rollNumber;
+    }
+
+    public String getName() 
+    {
+        return name;
+    }
+
+    public void setName(String name) 
+    {
+        this.name = name;
+    }
+
+    public int getMarksObtained() 
+    {
+        return marksObtained;
+    }
+
+    public void setMarksObtained(int marksObtained) 
+    {
+        this.marksObtained = marksObtained;
+    }
+
+    public double calculatePercentage() 
+    {
+        return ((double) marksObtained / 500) * 100;
+    }
+}

@@ -1,0 +1,36 @@
+import org.junit.Test;
+import static org.junit.Assert.*;
+public class JunitTest 
+{
+	@Test
+    public void testGetAndSetRollNumber() 
+	{
+        Student student = new Student();
+        student.setRollNumber(21890);
+        assertEquals(21890, student.getRollNumber());
+    }
+
+    @Test
+    public void testGetAndSetName() 
+    {
+        Student student = new Student();
+        student.setName("Kartik Naik");
+        assertEquals("Kartik Naik", student.getName());
+    }
+
+    @Test
+    public void testGetAndSetMarksObtained() 
+    {
+        Student student = new Student();
+        student.setMarksObtained(350);
+        assertEquals(350, student.getMarksObtained());
+    }
+
+    @Test
+    public void testCalculatePercentage() 
+    {
+        Student student = new Student();
+        student.setMarksObtained(350);
+        assertEquals(70.0, student.calculatePercentage(), 0.01);
+    }
+}
